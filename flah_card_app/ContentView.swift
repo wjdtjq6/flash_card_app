@@ -16,7 +16,7 @@ struct CardView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                     }
-                    .frame(width: 300, height: 400)
+                    .frame(width: 300, height: 330)
                     .transition(.reverseflip)
                 } else {
                     ZStack {
@@ -26,11 +26,11 @@ struct CardView: View {
                             .font(.largeTitle)
                             .foregroundColor(.white)
                     }
-                    .frame(width: 300, height: 400)
+                    .frame(width: 300, height: 330)
                     .transition(.flip)
                 }
             }
-            .frame(width: 300, height: 400)
+            .frame(width: 300, height: 380)
             .onTapGesture {
                 shouldDisappear.toggle()
                 withAnimation(.easeInOut(duration: 0.6)) {
